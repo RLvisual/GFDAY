@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Girlfriend Day, Sayang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="petals" id="petals" aria-hidden="true"></div>
+
+<!-- ENVELOPE OVERLAY -->
+<div class="envelope-overlay" id="envelopeOverlay">
+  <div class="envelope-wrap">
+    <p class="envelope-hint">ketuk untuk membuka</p>
+    <div class="envelope" id="envelope">
+      <div class="envelope-back"></div>
+      <div class="letter">
+        <p class="letter-line">Untuk</p>
+        <p class="letter-name">Sayang</p>
+      </div>
+      <div class="envelope-flap-wrap">
+        <div class="envelope-flap"></div>
+      </div>
+      <div class="envelope-seal">♥</div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<main id="mainContent">
+
+  <section class="section hero-open" id="opening">
+    <div class="container narrow">
+      <p class="eyebrow-soft">selamat hari pacar</p>
+      <h1 class="display-xl">Happy Girlfriend Day, Sayang.</h1>
+      <p class="late-note">Maaf Terlambat hehe</p>
+      <p class="lead">
+        Nggak ada cerita panjang di sini.
+        Cuma beberapa kata kecil untuk kamu.
+      </p>
+      <div class="scroll-cue">
+        <span>gulir pelan-pelan</span>
+        <div class="scroll-line"><i></i></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="thanks">
+    <div class="container narrow">
+      <p class="eyebrow-soft">untuk kamu</p>
+      <h2 class="display-lg">Terima kasih, ya.</h2>
+      <ul class="word-list">
+        <li>Terima kasih sudah ada.</li>
+        <li>Terima kasih sudah sabar.</li>
+        <li>Terima kasih sudah jadi tempat pulang.</li>
+        <li>Terima kasih sudah mau tertawa bareng aku.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section alt" id="wishes">
+    <div class="container narrow">
+      <p class="eyebrow-soft">doa kecilku</p>
+      <h2 class="display-lg">Semoga kamu selalu:</h2>
+      <div class="chips">
+        <span class="chip">Bahagia</span>
+        <span class="chip">Sehat</span>
+        <span class="chip">Tenang</span>
+        <span class="chip">Dicintai</span>
+        <span class="chip">Dimengerti</span>
+        <span class="chip">Banyak tertawa</span>
+      </div>
+      <p class="body-text closing-line">Itu saja. Sederhana, tapi tulus.</p>
+    </div>
+  </section>
+
+  <section class="section alt gallery-section" id="gallery">
+    <div class="container">
+      <p class="eyebrow-soft center">beberapa momen kita</p>
+      <h2 class="display-lg center">Kalau kata-kata belum cukup.</h2>
+      <div class="polaroids">
+        <figure class="polaroid tilt-a">
+          <div class="tape"></div>
+          <img src="foto1.jpg" alt="Momen bersama 1" loading="lazy">
+          <figcaption>kamu</figcaption>
+        </figure>
+        <figure class="polaroid tilt-b">
+          <div class="tape"></div>
+          <img src="foto2.jpg" alt="Momen bersama 2" loading="lazy">
+          <figcaption>kita</figcaption>
+        </figure>
+        <figure class="polaroid tilt-c">
+          <div class="tape"></div>
+          <img src="foto3.jpg" alt="Momen bersama 3" loading="lazy">
+          <figcaption>selalu</figcaption>
+        </figure>
+      </div>
+      <p class="hint-small center">foto-foto kecil untukmu</p>
+    </div>
+  </section>
+
+  <section class="section confess-section" id="confess">
+    <div class="container narrow center">
+      <p class="eyebrow-soft center">satu pertanyaan</p>
+      <h2 class="display-lg">
+        Sayang, boleh aku jadi pacarmu lagi hari ini, besok, dan seterusnya?
+      </h2>
+
+      <div class="confess-buttons" id="confessButtons">
+        <button class="btn-yes" id="btnYes">Boleh banget</button>
+        <button class="btn-no" id="btnNo">Nanti dulu</button>
+      </div>
+
+      <div class="confess-result" id="confessResult" hidden>
+        <p class="display-lg small-emphasis">Yey!</p>
+        <p class="body-text">
+          Selamat Hari Pacar, Sayang. Maaf terlambat,
+          tapi rasa sayangku nggak pernah telat.
+        </p>
+        <p class="signature">— dari aku, untukmu</p>
+      </div>
+    </div>
+    <div class="confetti" id="confetti" aria-hidden="true"></div>
+  </section>
+
+  <footer class="footer">
+    <p>dibuat dengan hati, untuk Sayang.</p>
+  </footer>
+
+</main>
+
+<audio id="bgMusic" src="lagu.mp3" loop preload="auto"></audio>
+<button class="music-toggle" id="musicToggle" type="button" aria-label="Putar musik" aria-pressed="false">
+  <span class="eq-bar"></span>
+  <span class="eq-bar"></span>
+  <span class="eq-bar"></span>
+</button>
+<p class="music-hint" id="musicHint">Autoplay <strong>Music</strong> Favorite</p>
+
+<script src="script.js"></script>
+</body>
+</html>
